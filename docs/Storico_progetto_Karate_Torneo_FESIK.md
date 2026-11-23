@@ -68,3 +68,9 @@ Basta allegare questo file e lo zip dei sorgenti a una nuova chat e scrivere cos
 - Penalità esclusivamente JOGAI, ATENAI, MUBOBI (contatori), anche nei comandi e nella pagina live; tolti Chui/Hansoku e l'escalation automatica dei Jogai. Kiken rimane come "ritiro".
 - Tasti: AKA Z jogai, X atenai, C mubobi; SHIRO M jogai, N atenai, B mubobi.
 - Punteggio mostrato in Ippon, con l'indicazione "+ WAZA-ARI" quando c'è mezzo punto. A fine incontro il riquadro del tempo diventa "VINCE AKA/SHIRO".
+
+## Repository e release
+
+- Codice su GitHub: https://github.com/audiouser69-commits/karate-torneo-fesik (privato)
+- Le release si generano con GitHub Actions (`.github/workflows/release.yml`, avvio manuale da Actions > "Build e release" > Run workflow): compila Windows e Mac (Mac con firma ad-hoc) e pubblica la release con il numero di versione di `package.json`.
+- Release v1.3.0: https://github.com/audiouser69-commits/karate-torneo-fesik/releases/tag/v1.3.0
