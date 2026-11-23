@@ -1,0 +1,61 @@
+KARATE TORNEO FESIK - Guida rapida
+==================================
+
+AVVIO
+1. Estrai lo zip in una cartella (es. Documenti\KarateTorneo).
+2. Avvia "Karate Torneo FESIK.exe". Se Windows mostra "PC protetto", clicca
+   "Ulteriori informazioni" > "Esegui comunque" (il programma non è firmato).
+
+PREPARAZIONE GARA
+1. Scheda Torneo: nome, data gara (serve a calcolare l'età), luogo, numero tatami.
+2. "Importa Excel" con la lista atleti (usa modello_atleti.xlsx come esempio).
+3. "Genera categorie": divide per specialità, classe d'età FESIK, sesso,
+   cinture, peso (kumite) e stile (kata). Le regole si cambiano nella scheda Regole.
+4. Scheda Categorie: correggi, unisci le categorie con 1 atleta, poi "Sorteggia tutte".
+   Formula automatica: 2 atleti = finale, 3 = girone all'italiana,
+   4+ = eliminazione diretta con recupero (o senza, a scelta). Kata a punteggio o bandierine.
+
+TABELLONE SU TV (HDMI)
+- Collega la TV in HDMI e imposta Windows su "Estendi" (Win+P > Estendi).
+- Premi "Apri tabellone TV": si apre a schermo intero sulla TV.
+  "↔ Schermo" lo sposta sull'altro monitor; F11 sulla finestra tabellone = schermo intero.
+- L'audio (Atoshi Baraku, fine tempo) esce dalla TV se l'audio HDMI è attivo.
+
+INCONTRO LIVE (tastiera)
+  Spazio = Hajime/Yame
+  AKA:   Q waza-ari, W ippon, A -1 waza-ari, Z jogai, X atenai, C mubobi
+  SHIRO: O waza-ari, P ippon, L -1 waza-ari, M jogai, N atenai, B mubobi
+  Ctrl+Z = annulla ultima azione
+Il programma ferma il tempo a punteggio pieno (Sanbon 3 ippon, Nihon 2, Ippon 1),
+gestisce Atoshi Baraku, Encho-sen, Sai Shiai, Hantei, Hikiwake. Penalità: Jogai, Atenai,
+Mubobi (contatori sul tabellone). A fine incontro premi "Conferma e registra": il tabellone avanza da solo.
+
+GRAFICHE EVENTO (scheda 🖼️)
+- Schermate per il pubblico: titolo della fase (es. "Premiazione"), sottotitolo e testo,
+  abbinati a una figura pixel art (karateka, karateka con coppa, saluto, kata, calcio,
+  arbitro, podio, medaglia, pausa, orologio, megafono) oppure a una tua immagine
+  (PNG/JPG, trasformabile in pixel art). 6 combinazioni di colori, animazione.
+- "Manda in onda" la mostra sul televisore (e sulla pagina live); "Torna al tabellone
+  gare" ripristina i punteggi. Caricando un incontro la grafica si toglie da sola.
+- Programma delle fasi: elenco con orari; la fase in corso è evidenziata in basso
+  nella grafica. "Fase successiva" avanza e, se esiste una grafica con lo stesso nome,
+  la seleziona (e la manda in onda se ne era già in onda un'altra).
+
+ACCOUNT E RISULTATI ONLINE (scheda 🔑)
+Tutto dentro il programma, una volta sola:
+1. Firebase (Google, gratis): "Apri Firebase" apre una finestra interna. Crea il
+   progetto e il Realtime Database (Belgio, modalità bloccata), incolla le regole
+   (tasto Copia), poi "Rileva dalla finestra" legge indirizzo e secret. "Prova e pubblica".
+2. Netlify (gratis): "Apri Netlify" > crea l'account, "Crea token" > New access token,
+   "Rileva dalla finestra", poi "Pubblica pagina live": ottieni link e QR code.
+   "QR sul tabellone" mostra il QR code sul televisore per il pubblico.
+Se Google rifiuta l'accesso dalla finestra interna, apri Firebase nel browser
+normale e incolla i dati a mano.
+Limiti gratuiti: Firebase ~10 GB/mese e 100 connessioni contemporanee (la pagina
+pubblica legge a intervalli, quindi regge molti spettatori); Netlify 300 crediti/mese,
+15 per pubblicazione: pubblica una volta, i risultati poi si aggiornano da soli.
+
+NOTE
+- I valori predefiniti seguono il Regolamento arbitrale FESIK agg. 15/02/2025.
+  Pesi e classi vanno sempre verificati con la circolare della gara.
+- Il torneo si salva da solo; fai comunque un backup con "Salva torneo su file".

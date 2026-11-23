@@ -1,0 +1,27 @@
+KARATE TORNEO FESIK - versione per Mac
+======================================
+
+QUALE SCEGLIERE
+- Mac con chip Apple (M1, M2, M3, M4...): KarateTorneoFESIK_Mac_AppleSilicon.zip
+- Mac con processore Intel:               KarateTorneoFESIK_Mac_Intel.zip
+  (Menu Apple > Informazioni su questo Mac > "Chip" o "Processore")
+
+INSTALLAZIONE (una volta sola)
+1. Fai doppio clic sullo zip e trascina "Karate Torneo FESIK" nella cartella Applicazioni.
+2. L'app non ha la firma Apple a pagamento, quindi macOS la blocca al primo avvio
+   (potrebbe dire che "è danneggiata"). Apri il Terminale (Applicazioni > Utility >
+   Terminale), incolla questa riga e premi Invio:
+
+   xattr -cr "/Applications/Karate Torneo FESIK.app" && codesign --force --deep -s - "/Applications/Karate Torneo FESIK.app"
+
+3. Ora apri l'app normalmente. Se compare ancora un avviso: Impostazioni di Sistema >
+   Privacy e sicurezza > in basso "Apri comunque".
+
+TABELLONE SUL TELEVISORE
+- Collega la TV (HDMI o adattatore USB-C/HDMI).
+- Impostazioni di Sistema > Monitor: usa la TV come monitor ESTESO (non "duplica").
+- Nel programma premi "Apri tabellone TV". Il tasto "↔ Schermo" lo sposta sull'altro monitor.
+
+DIFFERENZE RISPETTO A WINDOWS
+- Annulla ultima azione nell'incontro: Cmd+Z (oppure Ctrl+Z).
+- Tutto il resto funziona allo stesso modo: vedi LEGGIMI.txt e la guida PDF.
